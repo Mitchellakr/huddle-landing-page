@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+//subscription style
+
+.valid {
+    color: green;
+    font-size: 14px;
+}
+
+.invalid {
+    color: red;
+    font-size: 14px;
+}
+
+.valid-email {
+    border-radius: 0.5em;
+    border: 2px solid green;
+    color: green;
+}
+
+.invalid-email {
+    border-radius: 0.5em;
+    border: 2px solid rgb(255, 0, 0);
+    color: red;
+}
+
+//subscribe style ends 
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+// this is the header section
+
+header {
+    padding: 1.5em 0;
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-cta {
+            padding: .5em 1.2em;
+            border-radius: 50px;
+            color: hsl(322, 100%, 66%);
+            border: 2px solid hsl(322, 100%, 66%);
+        }
+    }
+}
+
+// this is the hero-section
+
+.hero-section {
+    margin: 4em 0;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .hero-copy {
+        text-align: center;
+
+        p {
+            padding: 1.5em 0 2.5em;
+        }
+
+        .hero-cta {
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(322, 100%, 66%);
+            padding: .5em 1.5em;
+            border-radius: 50px;
+        }
+    }
+
+    .screen-mockup {
+        margin: 4em 0;
+    }
+
+    .col-2 {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        img {
+            width: 1.7em;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// this is the second and fourth section 
+
+.second-section,
+.fourth-section {
+    margin: 4em 0;
+
+    img {
+        width: 100%;
+    }
+
+    .bg-top {
+        margin-bottom: -10px;
+    }
+
+    .background {
+        background-color: hsl(207, 100%, 98%);
+        padding: 2em 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 2em;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// this is the third section
+
+.third-section {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 2em;
+
+        img {
+            width: 100%;
+        }
+
+        .content {
+            order: 2;
+        }
+    }
+}
+
+// this is the fifth section
+
+.fifth-section {
+    text-align: center;
+    margin: 6em 0;
+
+    h1 {
+        margin: 1em 0;
+    }
+
+    .lg-btn-cta {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(322, 100%, 66%);
+        padding: .5em 1.5em;
+        border-radius: 50px;
+    }
+}
+
+// this is footer section
+footer {
+    .footer-top {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+}
+
+.footer-section {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(0, 0%, 100%);
+    padding: 2em 0;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5em;
+
+        .left-col {
+            .logo {
+                padding: 1em 0;
+            }
+
+            p {
+                padding: .5em 0 1em;
+            }
+
+            .contact-1 {
+                padding: .5em 0;
+                display: flex;
+
+                span {
+                    padding-left: 1em;
+                }
+            }
+        }
+
+        .right-col {
+            h1 {
+                padding: 1em 0;
+            }
+
+            p {
+                padding-bottom: 1.5em;
+            }
+
+            .error {
+                color: red;
+                display: none;
+            }
+
+            .form {
+                padding: 0;
+                display: flex;
+
+                input[type=email] {
+                    padding: .6em;
+                    border-radius: 5px;
+                }
+
+                input[type=submit] {
+                    background-color: hsl(322, 100%, 66%);
+                    padding: .6em 1.5em;
+                    border-radius: 5px;
+                    color: hsl(0, 0%, 100%);
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+}
+
+// this the media queries
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    // header changes
+
+    header .container .header-section .n-logo {
+        width: 170px;
+    }
+
+    footer .footer-section .container .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em;
+
+        .left-col {
+            .logo {
+                width: 170px;
+            }
+        }
+
+        .right-col {
+            .form {
+                display: flex;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    header .container .header-section .n-logo {
+        width: 120px;
+    }
+
+    header .container .header-section .header-cta {
+        font-size: .9em;
+    }
+
+    .hero-wrap .screen-mockup {
+        margin: 2em 0;
+    }
+
+    // hero-section changes
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        align-items: center;
+    }
+
+    // changes for second and fourth section
+
+    .second-section,
+    .fourth-section {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0 2em;
+
+            .content {
+                order: 2;
+                text-align: center;
+
+                h1 {
+                    padding: 2.5em 0 1em;
+                }
+            }
+        }
+    }
+
+    .third-section {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0 2em;
+
+            .content {
+                order: 2;
+                text-align: center;
+
+                h1 {
+                    padding: 2.5em 0 1em;
+                }
+            }
+        }
+    }
+
+    // this is the footer section changes
+
+    .right-col {
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: flex-end;
+
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+    }
+}

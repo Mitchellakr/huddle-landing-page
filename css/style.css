@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.valid {
+  color: green;
+  font-size: 14px;
+}
+
+.invalid {
+  color: red;
+  font-size: 14px;
+}
+
+.valid-email {
+  border-radius: 0.5em;
+  border: 2px solid green;
+  color: green;
+}
+
+.invalid-email {
+  border-radius: 0.5em;
+  border: 2px solid rgb(255, 0, 0);
+  color: red;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.5em 0;
+}
+header .header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-section .header-cta {
+  padding: 0.5em 1.2em;
+  border-radius: 50px;
+  color: hsl(322deg, 100%, 66%);
+  border: 2px solid hsl(322deg, 100%, 66%);
+}
+
+.hero-section {
+  margin: 4em 0;
+}
+
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.hero-wrap .hero-copy {
+  text-align: center;
+}
+.hero-wrap .hero-copy p {
+  padding: 1.5em 0 2.5em;
+}
+.hero-wrap .hero-copy .hero-cta {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(322deg, 100%, 66%);
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+}
+.hero-wrap .screen-mockup {
+  margin: 4em 0;
+}
+.hero-wrap .col-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-wrap .col-2 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-wrap .col-2 img {
+  width: 1.7em;
+}
+.hero-wrap .col-2 p {
+  text-align: center;
+}
+
+.second-section,
+.fourth-section {
+  margin: 4em 0;
+}
+.second-section img,
+.fourth-section img {
+  width: 100%;
+}
+.second-section .bg-top,
+.fourth-section .bg-top {
+  margin-bottom: -10px;
+}
+.second-section .background,
+.fourth-section .background {
+  background-color: hsl(207deg, 100%, 98%);
+  padding: 2em 0;
+}
+.second-section .grid,
+.fourth-section .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2em;
+}
+.second-section .grid img,
+.fourth-section .grid img {
+  width: 100%;
+}
+
+.third-section .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2em;
+}
+.third-section .grid img {
+  width: 100%;
+}
+.third-section .grid .content {
+  order: 2;
+}
+
+.fifth-section {
+  text-align: center;
+  margin: 6em 0;
+}
+.fifth-section h1 {
+  margin: 1em 0;
+}
+.fifth-section .lg-btn-cta {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(322deg, 100%, 66%);
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+}
+
+footer .footer-top {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.footer-section {
+  background-color: hsl(192deg, 100%, 9%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 2em 0;
+}
+.footer-section .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+}
+.footer-section .footer-grid .left-col .logo {
+  padding: 1em 0;
+}
+.footer-section .footer-grid .left-col p {
+  padding: 0.5em 0 1em;
+}
+.footer-section .footer-grid .left-col .contact-1 {
+  padding: 0.5em 0;
+  display: flex;
+}
+.footer-section .footer-grid .left-col .contact-1 span {
+  padding-left: 1em;
+}
+.footer-section .footer-grid .right-col h1 {
+  padding: 1em 0;
+}
+.footer-section .footer-grid .right-col p {
+  padding-bottom: 1.5em;
+}
+.footer-section .footer-grid .right-col .error {
+  color: red;
+  display: none;
+}
+.footer-section .footer-grid .right-col .form {
+  padding: 0;
+  display: flex;
+}
+.footer-section .footer-grid .right-col .form input[type=email] {
+  padding: 0.6em;
+  border-radius: 5px;
+}
+.footer-section .footer-grid .right-col .form input[type=submit] {
+  background-color: hsl(322deg, 100%, 66%);
+  padding: 0.6em 1.5em;
+  border-radius: 5px;
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 2em;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  header .container .header-section .n-logo {
+    width: 170px;
+  }
+
+  footer .footer-section .container .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+  footer .footer-section .container .footer-grid .left-col .logo {
+    width: 170px;
+  }
+  footer .footer-section .container .footer-grid .right-col .form {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 580px) {
+  header .container .header-section .n-logo {
+    width: 120px;
+  }
+
+  header .container .header-section .header-cta {
+    font-size: 0.9em;
+  }
+
+  .hero-wrap .screen-mockup {
+    margin: 2em 0;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+  }
+
+  .second-section .grid,
+.fourth-section .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2em;
+  }
+  .second-section .grid .content,
+.fourth-section .grid .content {
+    order: 2;
+    text-align: center;
+  }
+  .second-section .grid .content h1,
+.fourth-section .grid .content h1 {
+    padding: 2.5em 0 1em;
+  }
+
+  .third-section .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2em;
+  }
+  .third-section .grid .content {
+    order: 2;
+    text-align: center;
+  }
+  .third-section .grid .content h1 {
+    padding: 2.5em 0 1em;
+  }
+
+  .right-col .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-end;
+  }
+  .right-col .form input[type=email] {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
