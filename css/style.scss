@@ -65,6 +65,12 @@ header {
             border-radius: 50px;
             color: hsl(322, 100%, 66%);
             border: 2px solid hsl(322, 100%, 66%);
+            transition: all .5s ease;
+
+            &:hover {
+                background-color: hsl(322, 100%, 66%);
+                color: white;
+            }
         }
     }
 }
@@ -91,6 +97,10 @@ header {
             background-color: hsl(322, 100%, 66%);
             padding: .5em 1.5em;
             border-radius: 50px;
+
+            &:hover {
+                box-shadow: 0 5px 5px hsla(322, 100%, 66%, 0.229);
+            }
         }
     }
 
@@ -183,6 +193,10 @@ header {
         background-color: hsl(322, 100%, 66%);
         padding: .5em 1.5em;
         border-radius: 50px;
+
+        &:hover {
+            box-shadow: 0 5px 5px hsla(322, 100%, 66%, 0.229);
+        }
     }
 }
 

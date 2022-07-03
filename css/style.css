@@ -58,6 +58,11 @@ header .header-section .header-cta {
   border-radius: 50px;
   color: hsl(322deg, 100%, 66%);
   border: 2px solid hsl(322deg, 100%, 66%);
+  transition: all 0.5s ease;
+}
+header .header-section .header-cta:hover {
+  background-color: hsl(322deg, 100%, 66%);
+  color: white;
 }
 
 .hero-section {
@@ -79,6 +84,9 @@ header .header-section .header-cta {
   background-color: hsl(322deg, 100%, 66%);
   padding: 0.5em 1.5em;
   border-radius: 50px;
+}
+.hero-wrap .hero-copy .hero-cta:hover {
+  box-shadow: 0 5px 5px hsla(322deg, 100%, 66%, 0.229);
 }
 .hero-wrap .screen-mockup {
   margin: 4em 0;
@@ -152,6 +160,9 @@ header .header-section .header-cta {
   background-color: hsl(322deg, 100%, 66%);
   padding: 0.5em 1.5em;
   border-radius: 50px;
+}
+.fifth-section .lg-btn-cta:hover {
+  box-shadow: 0 5px 5px hsla(322deg, 100%, 66%, 0.229);
 }
 
 footer .footer-top {
